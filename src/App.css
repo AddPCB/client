@@ -7,7 +7,9 @@ body,
   box-sizing: border-box;
   width: 100%;
   height: 100%;
+  min-width:320px;
   font-family: 'Roboto', sans-serif;
+  font-size: calc(10px + 0.4vw);
 }
 :root {
   --type-electric: "\26A1"; /* ⚡ */
@@ -75,9 +77,11 @@ body {
 
 .pokemon-card h2 {
   text-align: center;
+  font-size: 2rem;
+  line-height:1.5rem;
   margin:0;
   background-color: rgba(255, 255, 255, 0.4);
-  padding: 1rem;
+  padding:0.75rem 0.25rem 0.75rem 0.25rem;
   border-radius: 0.5rem;
 }
 
@@ -92,14 +96,14 @@ h3 {
   background-color: rgba(255, 255, 255, 0.3);
   border-radius: 0.5rem 0.5rem 0 0;
   font-size: 1.5rem;
-  padding: 1rem;
+  padding: 0.75rem;
   line-height:1rem;
 }
 
 .pokemon-card .info-category-abilities ul,.pokemon-card .info-category-stats ul,
 .pokemon-card .info-category-type ul {
   list-style: none;
-  margin: 0;
+  margin: 0 0 0.5rem 0;
   padding: 0.5rem 0 0.5rem 0;
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 0 0 0.5rem 0.5rem;
