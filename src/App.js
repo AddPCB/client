@@ -7,7 +7,7 @@ function App() {
 
   async function getPokemon() {
     try {
-      const API = `http://localhost:8080/pokemon`;
+      const API = `/pokemon`;
       const res = await axios.get(API);
       setPokemon(res.data);
     } catch (error) {
